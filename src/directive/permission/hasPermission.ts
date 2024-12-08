@@ -1,12 +1,12 @@
 import useUserStore from '@/stores/user'
 
 export default {
-  mounted(el: any, binding: any, vnode: any) {
+  mounted(el: any, binding: any) {
     const { value } = binding
     const all_permission = '*:*:*'
     const permissions = useUserStore().permissions
 
-    if (value && value instanceof Array && value.length > 0) {
+    if (value && Array.isArray(value) && value.length > 0) {
       const permissionFlag = value
 
       const hasPermissions = permissions.some((permission) => {
@@ -16,7 +16,8 @@ export default {
       if (!hasPermissions) {
         el.parentNode && el.parentNode.removeChild(el)
       }
-    } else {
+    }
+    else {
       throw new Error(`请设置操作权限标签值`)
     }
   },

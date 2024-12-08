@@ -1,6 +1,6 @@
 import i18n from '@/locales/i18n'
 
-const initI18n = (app: any) => {
+function initI18n(app: any) {
   app.use(i18n)
 }
 

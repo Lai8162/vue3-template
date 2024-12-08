@@ -1,4 +1,4 @@
-export default {
+const buttonEn = {
   add: 'Add',
   search: 'Search',
   delete: 'Delete',
@@ -9,3 +9,5 @@ export default {
   upload: 'Upload',
   download: 'Download',
 }
+
+export default buttonEn

@@ -1,6 +1,6 @@
 import router from '@/routers/router'
 
-const initVueRouter = (app: any) => {
+function initVueRouter(app: any) {
   app.use(router)
 }
 

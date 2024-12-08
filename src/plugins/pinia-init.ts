@@ -1,4 +1,4 @@
-const initPinia = (app: any) => {
+function initPinia(app: any) {
   app.use(createPinia())
 }
 

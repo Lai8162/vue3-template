@@ -33,6 +33,7 @@ export default defineConfig(({ mode }) => {
           {
             'vue-router': ['createRouter', 'createWebHistory'],
             'vue-i18n': ['createI18n'],
+            'element-plus': ['ElMessageBox', 'ElMessage', 'ElNotification', 'ElLoading'],
           },
         ],
         dts: true,

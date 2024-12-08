@@ -6,7 +6,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "moduleDetection": "force",
     "useDefineForClassFields": true,
-    "declaration": true,
 
     /* Alias */
     "baseUrl": ".",
@@ -23,6 +22,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "declaration": true,
     "noEmit": true,
     "isolatedModules": true,
     "skipLibCheck": true,

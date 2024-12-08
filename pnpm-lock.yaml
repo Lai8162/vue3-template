@@ -33,18 +33,27 @@ importers:
       eslint:
         specifier: ^9.15.0
         version: 9.16.0(jiti@1.21.6)
+      eslint-plugin-vue:
+        specifier: ^9.32.0
+        version: 9.32.0(eslint@9.16.0(jiti@1.21.6))
       fast-glob:
         specifier: ^3.3.2
         version: 3.3.2
       file-saver:
         specifier: ^2.0.5
         version: 2.0.5
+      js-cookie:
+        specifier: ^3.0.5
+        version: 3.0.5
       pinia:
         specifier: ^2.2.6
         version: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       prettier:
         specifier: ^3.4.1
         version: 3.4.1
+      qs:
+        specifier: ^6.13.1
+        version: 6.13.1
       sass:
         specifier: ^1.81.0
         version: 1.81.0
@@ -1920,6 +1929,10 @@ packages:
   js-base64@2.6.4:
     resolution: {integrity: sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==, tarball: https://registry.npmmirror.com/js-base64/-/js-base64-2.6.4.tgz}
 
+  js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==, tarball: https://registry.npmmirror.com/js-cookie/-/js-cookie-3.0.5.tgz}
+    engines: {node: '>=14'}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==, tarball: https://registry.npmmirror.com/js-tokens/-/js-tokens-4.0.0.tgz}
 
@@ -2441,6 +2454,10 @@ packages:
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==, tarball: https://registry.npmmirror.com/punycode/-/punycode-2.3.1.tgz}
     engines: {node: '>=6'}
+
+  qs@6.13.1:
+    resolution: {integrity: sha512-EJPeIn0CYrGu+hli1xilKAPXODtJ12T0sP63Ijx2/khC2JtuaN3JyNIpvmnkmaEtha9ocbG4A4cMcr+TvqvwQg==, tarball: https://registry.npmmirror.com/qs/-/qs-6.13.1.tgz}
+    engines: {node: '>=0.6'}
 
   query-string@4.3.4:
     resolution: {integrity: sha512-O2XLNDBIg1DnTOa+2XrIwSiXEV8h2KImXUnjhhn2+UsvZ+Es2uyd5CCRTNQlDGbzUQOW3aYCBx9rVA6dzsiY7Q==, tarball: https://registry.npmmirror.com/query-string/-/query-string-4.3.4.tgz}
@@ -5022,6 +5039,8 @@ snapshots:
 
   js-base64@2.6.4: {}
 
+  js-cookie@3.0.5: {}
+
   js-tokens@4.0.0: {}
 
   js-tokens@9.0.1: {}
@@ -5703,6 +5722,10 @@ snapshots:
   proxy-from-env@1.1.0: {}
 
   punycode@2.3.1: {}
+
+  qs@6.13.1:
+    dependencies:
+      side-channel: 1.0.6
 
   query-string@4.3.4:
     dependencies:

@@ -1,7 +1,7 @@
-import hasRole from '@/directive/permission/hasRole'
 import hasPermission from '@/directive/permission/hasPermission'
+import hasRole from '@/directive/permission/hasRole'
 
-const initDirective = (app: any) => {
+function initDirective(app: any) {
   app.directive('hasRole', hasRole)
   app.directive('hasPermission', hasPermission)
 }

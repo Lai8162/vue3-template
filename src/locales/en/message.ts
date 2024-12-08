@@ -1,3 +1,3 @@
-export default {
+const messageEn = {}
 
-}
+export default messageEn

@@ -1,9 +1,14 @@
 const useUserStore = defineStore('user', () => {
-  const user = ref({ name: '赖晓飞', phone: '13094404964' } as Record<string, any>)
+  const user: Record<string, any> = ref({ name: '赖晓飞', phone: '13094404964' })
   const roles = ref(['common'] as string[])
   const permissions = ref(['system:user:add'] as string[])
 
-  return { user, roles, permissions }
+  function logOut() {
+    user.value = {}
+    return Promise.resolve()
+  }
+
+  return { user, roles, permissions, logOut }
 })
 
 export default useUserStore
