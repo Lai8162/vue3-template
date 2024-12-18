@@ -1,14 +1,25 @@
-const useUserStore = defineStore('user', () => {
-  const user: Record<string, any> = ref({ name: '赖晓飞', phone: '13094404964' })
-  const roles = ref(['common'] as string[])
-  const permissions = ref(['system:user:add'] as string[])
+interface User {
+  name: string
+  phone: string
+}
 
-  function logOut() {
-    user.value = {}
-    return Promise.resolve()
-  }
+const useUserStore = defineStore(
+  'user',
+  () => {
+    const user = ref<User>({ name: '赖晓飞', phone: '13094404964' })
+    const roles = ref(['common'] as string[])
+    const permissions = ref(['system:user:add'] as string[])
 
-  return { user, roles, permissions, logOut }
-})
+    function logOut() {
+      user.value = {} as User
+      return Promise.resolve()
+    }
+
+    return { user, roles, permissions, logOut }
+  },
+  {
+    persist: true,
+  },
+)
 
 export default useUserStore

@@ -1,5 +1,9 @@
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
 function initPinia(app: any) {
-  app.use(createPinia())
+  const pinia = createPinia()
+  pinia.use(piniaPluginPersistedstate)
+  app.use(pinia)
 }
 
 export default initPinia

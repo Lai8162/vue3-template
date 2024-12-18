@@ -12,7 +12,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <el-button icon="download" default="primary">
+  <el-button icon="download" type="primary" plain>
     {{ props.title }}
   </el-button>
 </template>
