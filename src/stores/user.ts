@@ -6,7 +6,7 @@ interface User {
 const useUserStore = defineStore(
   'user',
   () => {
-    const user = ref<User>({ name: '赖晓飞', phone: '13094404964' })
+    const user = ref<User>({ name: '懒洋洋', phone: '10010' })
     const roles = ref(['common'] as string[])
     const permissions = ref(['system:user:add'] as string[])
 

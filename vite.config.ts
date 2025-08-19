@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       vue(),
       WindiCSS(),
       Components({
-        dirs: ['src/components/', 'src/views/'],
+        dirs: ['src/components/', 'src/views/', 'src/layouts'],
         extensions: ['vue'],
         resolvers: [ElementPlusResolver()],
         dts: true,
@@ -56,6 +56,9 @@ export default defineConfig(({ mode }) => {
           additionalData: `@use '@/assets/css/global.scss' as *; @use '@/assets/css/element.scss' as *;`,
         },
       },
+    },
+    server: {
+      port: 7001,
     },
   }
 })

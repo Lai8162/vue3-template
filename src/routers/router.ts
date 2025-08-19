@@ -1,6 +1,7 @@
 import home from './home'
+import layout from './layout'
 
-const routes = [...home]
+const routes = [...home, ...layout]
 
 const router = createRouter({
   history: createWebHistory(),

@@ -7,7 +7,7 @@ const appTitle = import.meta.env.VITE_APP_TITLE
 const userStore = useUserStore()
 const menuStore = useMenuStore()
 
-userStore.user.name = 'laixiaofei'
+userStore.user.name = '美羊羊'
 </script>
 
 <template>

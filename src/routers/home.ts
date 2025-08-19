@@ -1,8 +1,6 @@
-import HelloWorld from '@/views/HelloWorld.vue'
-
 export default [
   {
     path: '/',
-    component: HelloWorld,
+    component: () => import('@/views/HelloWorld.vue'),
   },
 ]
